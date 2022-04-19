@@ -44,7 +44,7 @@ class MMCLIParser():
                         cur_subsys = subsys
                         res[cur_sys][cur_subsys] = ''
 
-                    val = line[second_idx:].strip().strip(':').strip().strip('\'').strip()
+                    val = line[second_idx:].strip().lstrip(':').strip().strip('\'').strip()
                     res[cur_sys][cur_subsys] = val
 
                 elif second_idx == -1:
